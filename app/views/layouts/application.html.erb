@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -15,10 +16,13 @@
 </html>
 
 =======
+=======
+>>>>>>> static-pages
   <head>
 	<title><%= full_title(yield(:title)) %></title>
 	<%= stylesheet_link_tag 'application', media: 'all',
 	'data-turbolinks-track' => true %> <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<<<<<<< HEAD
 	<%= csrf_meta_tags %> <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
@@ -43,3 +47,15 @@
   </body>
 </html>
 >>>>>>> filling-in-layout
+=======
+	<%= csrf_meta_tags %>
+	<%= render 'layouts/shim' %> </head>
+  <body>
+	<%= render 'layouts/header' %> 
+	<div class="container">
+		<%= yield %> 
+		<%= render 'layouts/footer' %>
+	</div>
+  </body>
+</html>
+>>>>>>> static-pages
